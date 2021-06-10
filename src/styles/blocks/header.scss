@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__title {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 140%;
+		margin-bottom: 4px;
+	}
+	&__date {
+		font-weight: normal;
+		line-height: 140%;
+		color: #e0e6e9;
+	}
+	&__label {
+		display: flex;
+		align-items: center;
+		background: #2d303e;
+		border: 1px solid #393c49;
+		border-radius: 8px;
+		padding: 14px;
+		min-width: 220px;
+		.search {
+			fill: #fff;
+			width: 15px;
+			height: 15px;
+			margin-right: 10px;
+		}
+	}
+	&__search {
+		background: transparent;
+		border: none;
+		font-weight: normal;
+		font-size: 14px;
+		color: #abbbc2;
+		width: 162px;
+		outline: none;
+		&::placeholder {
+			line-height: 140%;
+			color: #abbbc2;
+		}
+	}
+}

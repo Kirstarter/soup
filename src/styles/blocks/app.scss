@@ -1,0 +1,39 @@
+.logo {
+	display: block;
+	margin-bottom: 26px;
+	margin-left: 12px;
+	&__pic {
+		width: 56px;
+		height: 56px;
+	}
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	fill: #fff;
+}
+
+.page {
+	display: flex;
+	height: 100%;
+}
+
+.menu,
+.orders,
+.maincontent {
+	padding: 24px;
+}
+
+.menu,
+.orders {
+	background: #1f1d2b;
+}
+
+.maincontent {
+	width: 57%;
+}
+
+.p14 {
+	padding: 0 14px;
+}

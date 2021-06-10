@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./main.min.css">
+	<title>TEST</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="page">
+				<aside class="menu">
+					<a tabindex="0" href="#" class="logo">
+						<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect opacity="0.26" width="56" height="56" rx="12" fill="#EB966A" />
+							<path
+								d="M39.6667 11.3334H16.3334C13.5767 11.3334 11.3334 13.5767 11.3334 16.3334V21.0517C11.3334 22.8067 11.97 24.4017 13 25.6284V41.3334C13 41.7754 13.1756 42.1993 13.4882 42.5119C13.8008 42.8244 14.2247 43 14.6667 43H28C28.4421 43 28.866 42.8244 29.1786 42.5119C29.4911 42.1993 29.6667 41.7754 29.6667 41.3334V33H36.3334V41.3334C36.3334 41.7754 36.509 42.1993 36.8215 42.5119C37.1341 42.8244 37.558 43 38 43H41.3334C41.7754 43 42.1993 42.8244 42.5119 42.5119C42.8244 42.1993 43 41.7754 43 41.3334V25.6267C44.03 24.4017 44.6667 22.8067 44.6667 21.05V16.3334C44.6667 13.5767 42.4234 11.3334 39.6667 11.3334ZM41.3334 16.3334V21.0517C41.3334 22.9517 39.9184 24.5717 38.1817 24.6634L38 24.6667C36.1617 24.6667 34.6667 23.1717 34.6667 21.3334V14.6667H39.6667C40.5867 14.6667 41.3334 15.415 41.3334 16.3334ZM24.6667 21.3334V14.6667H31.3334V21.3334C31.3334 23.1717 29.8384 24.6667 28 24.6667C26.1617 24.6667 24.6667 23.1717 24.6667 21.3334ZM14.6667 16.3334C14.6667 15.415 15.4134 14.6667 16.3334 14.6667H21.3334V21.3334C21.3334 23.1717 19.8384 24.6667 18 24.6667L17.8184 24.6617C16.0817 24.5717 14.6667 22.9517 14.6667 21.0517V16.3334ZM24.6667 34.6667H18V29.6667H24.6667V34.6667Z"
+								fill="url(#paint0_linear)" />
+							<defs>
+								<linearGradient id="paint0_linear" x1="28" y1="11.3334" x2="28" y2="43"
+									gradientUnits="userSpaceOnUse">
+									<stop stop-color="#EA9769" />
+									<stop offset="1" stop-color="#EA6969" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</a>
+					<ul class="menu__list">
+						<li tabindex="0" class="menu__item active">
+							<div class="menu__icon">
+								<svg class="house icon">
+									<use xlink:href="./images/icons/sprite.svg#house"></use>
+								</svg>
+							</div>
+						</li>
+						<li tabindex="0" class="menu__item">
+							<div class="menu__icon">
+								<svg class="discount icon">
+									<use xlink:href="./images/icons/sprite.svg#discount"></use>
+								</svg>
+							</div>
+						</li>
+						<li tabindex="0" class="menu__item">
+							<div class="menu__icon">
+								<svg class="graph icon">
+									<use xlink:href="./images/icons/sprite.svg#graph"></use>
+								</svg>
+							</div>
+						</li>
+						<li tabindex="0" class="menu__item">
+							<div class="menu__icon">
+								<svg class="message icon">
+									<use xlink:href="./images/icons/sprite.svg#message"></use>
+								</svg>
+							</div>
+						</li>
+						<li tabindex="0" class="menu__item">
+							<div class="menu__icon">
+								<svg class="not icon">
+									<use xlink:href="./images/icons/sprite.svg#not"></use>
+								</svg>
+							</div>
+						</li>
+						<li tabindex="0" class="menu__item">
+							<div class="menu__icon">
+								<svg class="settings icon">
+									<use xlink:href="./images/icons/sprite.svg#settings"></use>
+								</svg>
+							</div>
+						</li>
+						<li tabindex="0" class="menu__item">
+							<div class="menu__icon">
+								<svg class="logout icon">
+									<use xlink:href="./images/icons/sprite.svg#logout"></use>
+								</svg>
+							</div>
+						</li>
+					</ul>
+				</aside>
+				<main class="maincontent">
+					<div class="header">
+						<div class="header__left">
+							<h1 class="header__title">Jaegar Resto</h1>
+							<date class="header__date">Tuesday, 2 Feb 2021</date>
+						</div>
+						<div class="header__right">
+							<label class="header__label">
+								<svg class="search">
+									<use xlink:href="./images/icons/sprite.svg#search"></use>
+								</svg>
+								<input tabindex="0" type="text" class='header__search'
+									placeholder='Search for food, coffe, etc..'>
+							</label>
+						</div>
+					</div>
+					<div class="products">
+						<div class="nav-tabs products__tabs">
+							<div tabindex="0" data-tab="1" class="nav-tab products__tab active">Hot Dishes</div>
+							<div tabindex="0" data-tab="2" class="nav-tab products__tab">Cold Dishes</div>
+							<div tabindex="0" data-tab="3" class="nav-tab products__tab">Soup</div>
+							<div tabindex="0" data-tab="4" class="nav-tab products__tab">Grill</div>
+							<div tabindex="0" data-tab="5" class="nav-tab products__tab">Appetizer</div>
+							<div tabindex="0" data-tab="6" class="nav-tab products__tab">Dessert</div>
+						</div>
+						<div class="tab-content products__content">
+							<div data-tab-content="1" class="tab-pane products__plane active">
+								<div class="products__header">
+									<h2 class="products__title">Choose Dishes</h2>
+									<div class="products__menu">
+										<ul class="products__list">
+											<svg tabindex="0" class="arrowdown">
+												<use xlink:href="./images/icons/sprite.svg#arrowdown"></use>
+											</svg>
+											<li tabindex="0" class="products__item active">Dine In</li>
+											<li tabindex="0" class="products__item">To Go</li>
+											<li tabindex="0" class="products__item">Delivery</li>
+										</ul>
+									</div>
+								</div>
+								<div class="products__cards">
+									<div class="row grid-row">
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/1.png" alt="Spicy seasoned seafood noodles"
+													class="card__img">
+												<h4 class="card__title">Spicy seasoned seafood noodles</h4>
+												<div class="card__price">$ 2.29</div>
+												<div class="card__text">20 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/2.png" alt="Salted Pasta with mushroom sauce"
+													class="card__img">
+												<h4 class="card__title">Salted Pasta with mushroom sauce</h4>
+												<div class="card__price">$ 2.69</div>
+												<div class="card__text">11 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/3.png" alt="Beef dumpling in hot and sour soup"
+													class="card__img">
+												<h4 class="card__title">Beef dumpling in hot and sour soup</h4>
+												<div class="card__price">$ 2.99</div>
+												<div class="card__text">16 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/4.png" alt="Healthy noodle with spinach leaf"
+													class="card__img">
+												<h4 class="card__title">Healthy noodle with spinach leaf</h4>
+												<div class="card__price">$ 2.29</div>
+												<div class="card__text">22 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/5.png" alt="Hot spicy fried rice with omelet"
+													class="card__img">
+												<h4 class="card__title">Hot spicy fried rice with omelet</h4>
+												<div class="card__price">$ 2.49</div>
+												<div class="card__text">13 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/6.png"
+													alt="Spicy instant noodle with special omelette" class="card__img">
+												<h4 class="card__title">Spicy instant noodle with special omelette</h4>
+												<div class="card__price">$ 2.59</div>
+												<div class="card__text">17 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/7.png" alt="Spicy noodle with seafood noodles"
+													class="card__img">
+												<h4 class="card__title">Spicy noodle with seafood noodles</h4>
+												<div class="card__price">$ 2.89</div>
+												<div class="card__text">26 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/8.png" alt="Hot spicy fried seafood noodles"
+													class="card__img">
+												<h4 class="card__title">Hot spicy fried seafood noodles</h4>
+												<div class="card__price">$ 2.19</div>
+												<div class="card__text">5 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/9.png" alt="Spicy seasoned seafood noodles"
+													class="card__img">
+												<h4 class="card__title">Spicy seasoned seafood noodles</h4>
+												<div class="card__price">$ 2.79</div>
+												<div class="card__text">45 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/3.png" alt="Spicy seasoned seafood noodles"
+													class="card__img">
+												<h4 class="card__title">Spicy seasoned seafood noodles</h4>
+												<div class="card__price">$ 2.99</div>
+												<div class="card__text">34 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/7.png" alt="Spicy seasoned seafood noodles"
+													class="card__img">
+												<h4 class="card__title">Spicy seasoned seafood noodles</h4>
+												<div class="card__price">$ 2.59</div>
+												<div class="card__text">62 Bowls available</div>
+											</div>
+										</div>
+										<div class="col lg-4 p14">
+											<div tabindex="0" class="card">
+												<img src="./images/5.png" alt="Spicy seasoned seafood noodles"
+													class="card__img">
+												<h4 class="card__title">Spicy seasoned seafood noodles</h4>
+												<div class="card__price">$ 2.39</div>
+												<div class="card__text">85 Bowls available</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-tab-content="2" class="tab-pane products__plane">
+								Cold Dishes content
+							</div>
+							<div data-tab-content="3" class="tab-pane products__plane">
+								Soup content
+							</div>
+							<div data-tab-content="4" class="tab-pane products__plane">
+								Grill content
+							</div>
+							<div data-tab-content="5" class="tab-pane products__plane">
+								Appetizer content
+							</div>
+							<div data-tab-content="6" class="tab-pane products__plane">
+								Dessert content
+							</div>
+						</div>
+					</div>
+
+				</main>
+				<aside class="orders">
+					<h3 class="orders__title">Orders #34562</h3>
+					<ul class="orders__delivery">
+						<li tabindex="0" class="orders__select active">Dine In</li>
+						<li tabindex="0" class="orders__select">To Go</li>
+						<li tabindex="0" class="orders__select">Delivery</li>
+					</ul>
+					<div class="orders__menu">
+						<div class="orders__header">
+							<ul class="orders__names">
+								<li class="orders__name">Item</li>
+								<li class="orders__name">Qty</li>
+								<li class="orders__name">Price</li>
+							</ul>
+						</div>
+						<ul class="orders__list">
+							<li class="orders__item">
+								<div class="orders__up">
+									<div class="orders__dish">
+										<img src="./images/1.png" alt="Spicy seasoned seafood noodles"
+											class="orders__img">
+										<div class="orders__info">
+											<h6 class="orders__app">Spicy seasoned sea...</h6>
+											<div class="orders__price">$ 2.29</div>
+										</div>
+									</div>
+									<div class="orders__count">2</div>
+									<div class="orders__sum">$ 4,58</div>
+								</div>
+								<div class="orders__down">
+									<input type="text" placeholder="Order Note..."
+										value='Please, just a little bit spicy only.' class="orders__input">
+									<button class="orders__del">
+										<svg class="del">
+											<use xlink:href="./images/icons/sprite.svg#del"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="orders__item">
+								<div class="orders__up">
+									<div class="orders__dish">
+										<img src="./images/2.png" alt="Salted Pasta with mushroom sauce"
+											class="orders__img">
+										<div class="orders__info">
+											<h6 class="orders__app">Spicy seasoned sea...</h6>
+											<div class="orders__price">$ 2.29</div>
+										</div>
+									</div>
+									<div class="orders__count">2</div>
+									<div class="orders__sum">$ 4,58</div>
+								</div>
+								<div class="orders__down">
+									<input type="text" placeholder="Order Note..." class="orders__input">
+									<button class="orders__del">
+										<svg class="del">
+											<use xlink:href="./images/icons/sprite.svg#del"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="orders__item">
+								<div class="orders__up">
+									<div class="orders__dish">
+										<img src="./images/3.png" alt="Beef dumpling in hot and sour soup"
+											class="orders__img">
+										<div class="orders__info">
+											<h6 class="orders__app">Spicy seasoned sea...</h6>
+											<div class="orders__price">$ 2.29</div>
+										</div>
+									</div>
+									<div class="orders__count">2</div>
+									<div class="orders__sum">$ 4,58</div>
+								</div>
+								<div class="orders__down">
+									<input type="text" placeholder="Order Note..." class="orders__input">
+									<button class="orders__del">
+										<svg class="del">
+											<use xlink:href="./images/icons/sprite.svg#del"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="orders__item">
+								<div class="orders__up">
+									<div class="orders__dish">
+										<img src="./images/4.png" alt="Healthy noodle with spinach leaf"
+											class="orders__img">
+										<div class="orders__info">
+											<h6 class="orders__app">Spicy seasoned sea...</h6>
+											<div class="orders__price">$ 2.29</div>
+										</div>
+									</div>
+									<div class="orders__count">2</div>
+									<div class="orders__sum">$ 4,58</div>
+								</div>
+								<div class="orders__down">
+									<input type="text" placeholder="Order Note..." class="orders__input">
+									<button class="orders__del">
+										<svg class="del">
+											<use xlink:href="./images/icons/sprite.svg#del"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+						</ul>
+						<div class="orders__footer">
+							<div class="orders__total">
+								<div class="orders__total-name">Discount</div>
+								<div class="orders__total-price"> $ 0</div>
+							</div>
+							<div class="orders__total">
+								<div class="orders__total-name">Sub total</div>
+								<div class="orders__total-price"> $ 21,03</div>
+							</div>
+							<button class="orders__payment">Continue to Payment</button>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+	<div class="modal">
+		<div class="modal__bg"></div>
+		<div class="modal__content">
+			<div class="modal__confirmation">
+				<div class="modal__header">
+					<button class="modal__back">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.5 16.5L4 12M4 12L8.5 7.5M4 12L20 12" stroke="white" stroke-width="1.8"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+					<div class="modal__container">
+						<div class="modal__left">
+							<h3 class="modal__title">Confirmation</h3>
+							<div class="modal__subtitle">Orders #34562</div>
+						</div>
+						<button class="modal__plus">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M10 2.5V10M10 17.5V10M10 10H17.5M10 10H2.5" stroke="#FAFAFA" stroke-width="1.8"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="orders">
+					<ul class="orders__list">
+						<li class="orders__item">
+							<div class="orders__up">
+								<div class="orders__dish">
+									<img src="./images/1.png" alt="Healthy noodle with spinach leaf"
+										class="orders__img">
+									<div class="orders__info">
+										<h6 class="orders__app">Spicy seasoned sea...</h6>
+										<div class="orders__price">$ 2.29</div>
+									</div>
+								</div>
+								<div class="orders__count">2</div>
+								<div class="orders__sum">$ 4,58</div>
+							</div>
+							<div class="orders__down">
+								<input type="text" placeholder="Order Note..."
+									value='Please, just a little bit spicy only.' class="orders__input">
+								<button class="orders__del">
+									<svg class="del">
+										<use xlink:href="./images/icons/sprite.svg#del"></use>
+									</svg>
+								</button>
+							</div>
+						</li>
+						<li class="orders__item">
+							<div class="orders__up">
+								<div class="orders__dish">
+									<img src="./images/2.png" alt="Healthy noodle with spinach leaf"
+										class="orders__img">
+									<div class="orders__info">
+										<h6 class="orders__app">Spicy seasoned sea...</h6>
+										<div class="orders__price">$ 2.29</div>
+									</div>
+								</div>
+								<div class="orders__count">2</div>
+								<div class="orders__sum">$ 4,58</div>
+							</div>
+							<div class="orders__down">
+								<input type="text" placeholder="Order Note..." class="orders__input">
+								<button class="orders__del">
+									<svg class="del">
+										<use xlink:href="./images/icons/sprite.svg#del"></use>
+									</svg>
+								</button>
+							</div>
+						</li>
+						<li class="orders__item">
+							<div class="orders__up">
+								<div class="orders__dish">
+									<img src="./images/3.png" alt="Healthy noodle with spinach leaf"
+										class="orders__img">
+									<div class="orders__info">
+										<h6 class="orders__app">Spicy seasoned sea...</h6>
+										<div class="orders__price">$ 2.29</div>
+									</div>
+								</div>
+								<div class="orders__count">2</div>
+								<div class="orders__sum">$ 4,58</div>
+							</div>
+							<div class="orders__down">
+								<input type="text" placeholder="Order Note..." class="orders__input">
+								<button class="orders__del">
+									<svg class="del">
+										<use xlink:href="./images/icons/sprite.svg#del"></use>
+									</svg>
+								</button>
+							</div>
+						</li>
+						<li class="orders__item">
+							<div class="orders__up">
+								<div class="orders__dish">
+									<img src="./images/4.png" alt="Healthy noodle with spinach leaf"
+										class="orders__img">
+									<div class="orders__info">
+										<h6 class="orders__app">Spicy seasoned sea...</h6>
+										<div class="orders__price">$ 2.29</div>
+									</div>
+								</div>
+								<div class="orders__count">2</div>
+								<div class="orders__sum">$ 4,58</div>
+							</div>
+							<div class="orders__down">
+								<input type="text" placeholder="Order Note..." class="orders__input">
+								<button class="orders__del">
+									<svg class="del">
+										<use xlink:href="./images/icons/sprite.svg#del"></use>
+									</svg>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<div class="orders__footer">
+						<div class="orders__total">
+							<div class="orders__total-name">Discount</div>
+							<div class="orders__total-price"> $ 0</div>
+						</div>
+						<div class="orders__total">
+							<div class="orders__total-name">Sub total</div>
+							<div class="orders__total-price"> $ 21,03</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__payment">
+				<div class="modal__header">
+					<div class="modal__container">
+						<div class="modal__left">
+							<h3 class="modal__title">Payment</h3>
+							<div class="modal__subtitle">3 payment method available</div>
+						</div>
+					</div>
+				</div>
+				<div class="form">
+					<h4 class="form__title">Payment Method</h4>
+					<ul class="form__payments">
+						<li tabindex="0" class="form__payment active">
+							<svg class="form__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M1.24998 9.0001C1.24998 6.37675 3.37662 4.2501 5.99998 4.2501H18C20.6233 4.2501 22.75 6.37675 22.75 9.0001V15.0001C22.75 17.6235 20.6233 19.7501 18 19.7501H5.99998C3.37662 19.7501 1.24998 17.6235 1.24998 15.0001V9.0001ZM2.83694 8.2501H21.163C20.8244 6.81675 19.5368 5.7501 18 5.7501H5.99998C4.46318 5.7501 3.17552 6.81675 2.83694 8.2501ZM21.25 9.7501H2.74998V15.0001C2.74998 16.795 4.20505 18.2501 5.99998 18.2501H18C19.7949 18.2501 21.25 16.795 21.25 15.0001V9.7501ZM13.25 15.0001C13.25 14.5859 13.5858 14.2501 14 14.2501H18C18.4142 14.2501 18.75 14.5859 18.75 15.0001C18.75 15.4143 18.4142 15.7501 18 15.7501H14C13.5858 15.7501 13.25 15.4143 13.25 15.0001Z" />
+							</svg>
+							<div class="form__text">Credit Card</div>
+						</li>
+						<li tabindex="0" class="form__payment">
+							<svg class="form__icon form__icon--stroke" width="24" height="24" viewBox="0 0 24 24"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.5 7.2C19.2 8.2 20 10 20 12C20 14.5 17.5 16.5 15 16.5H12.4L11.8 20.1C11.7532 20.3293 11.6276 20.5349 11.4449 20.6811C11.2621 20.8272 11.0339 20.9047 10.8 20.9H8.1C8.02501 20.9015 7.95064 20.8861 7.88239 20.855C7.81415 20.8239 7.75378 20.7778 7.70577 20.7202C7.65775 20.6626 7.62331 20.5949 7.605 20.5222C7.58669 20.4494 7.58498 20.3735 7.6 20.3L7.8 18.9M10 13H12.5C15 13 17.5 10.5 17.5 8C17.5 5 15.6 3 12.5 3H7C6.5 3 6 3.5 6 4L4 18C4 18.5 4.5 19 5 19H7.8L9 14C9.1 13.4 9.4 13 10 13Z"
+									stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+							<div class="form__text">Paypal</div>
+						</li>
+						<li tabindex="0" class="form__payment">
+							<svg class="form__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M16.188 2.5C19.3978 2.5 22 5.16116 22 8.44374V15.5563C22 18.8388 19.3978 21.5 16.188 21.5H7.81204C4.60219 21.5 2 18.8388 2 15.5563V8.44374C2 5.16116 4.60219 2.5 7.81204 2.5H16.188ZM16.188 3.98651H7.81204C5.40498 3.98651 3.45358 5.98213 3.45358 8.44374V15.5563C3.45358 18.0179 5.40498 20.0135 7.81204 20.0135H16.188C18.595 20.0135 20.5464 18.0179 20.5464 15.5563L20.546 15.279L17.3499 15.2798C15.5084 15.2787 14.0159 13.7531 14.0147 11.8695C14.0147 10.0491 15.4101 8.56244 17.1673 8.46431L17.3504 8.45916L20.546 8.459L20.5464 8.44374C20.5464 6.05454 18.7081 4.10431 16.3991 3.99165L16.188 3.98651ZM20.546 9.945L17.3508 9.94567C16.3109 9.94632 15.4683 10.8074 15.4683 11.869C15.4689 12.8811 16.2329 13.7102 17.2033 13.7874L17.3504 13.7933L20.546 13.793V9.945ZM17.7942 11.0652C18.1956 11.0652 18.521 11.3979 18.521 11.8084C18.521 12.1847 18.2475 12.4957 17.8928 12.5449L17.7942 12.5517H17.4921C17.0907 12.5517 16.7653 12.2189 16.7653 11.8084C16.7653 11.4322 17.0388 11.1212 17.3935 11.072L17.4921 11.0652H17.7942ZM12.3539 6.99736C12.7553 6.99736 13.0807 7.33013 13.0807 7.74062C13.0807 8.1169 12.8073 8.42788 12.4525 8.47709L12.3539 8.48388H7.12203C6.72063 8.48388 6.39524 8.15111 6.39524 7.74062C6.39524 7.36434 6.66866 7.05337 7.0234 7.00415L7.12203 6.99736H12.3539Z" />
+							</svg>
+							<div class="form__text">Cash</div>
+						</li>
+					</ul>
+					<form action="" class="form__content">
+						<label for="" class="form__label">
+							<div class="form__entry">Cardholder Name</div>
+							<input type="text" placeholder="Levi Ackerman" class="form__input">
+						</label>
+						<label for="" class="form__label">
+							<div class="form__entry">Card Number</div>
+							<input type="number" placeholder="2564 1421 0897 1244" class="form__input">
+						</label>
+						<div class="form__group">
+							<label for="" class="form__label">
+								<div class="form__entry">Expiration Date</div>
+								<input type="text" placeholder="02/2022" class="form__input">
+							</label>
+							<label for="" class="form__label">
+								<div class="form__entry">CVV</div>
+								<input type="password" id="only_num" value="" maxlength="3" class="form__input">
+							</label>
+						</div>
+						<div class="form__group form__group--noborder">
+							<div class="form__label form__label--relative">
+								<div class="form__entry">Order Type</div>
+								<ul class="form__list">
+									<svg tabindex="0" class="arrowdown-form">
+										<use xlink:href="./images/icons/sprite.svg#arrowdown"></use>
+									</svg>
+									<li tabindex="0" class="form__item active">Dine In</li>
+									<li tabindex="0" class="form__item">To Go</li>
+									<li tabindex="0" class="form__item">Delivery</li>
+								</ul>
+							</div>
+
+							<label for="" class="form__label">
+								<div class="form__entry">Table no.</div>
+								<input type="number" value="140" disabled class="form__input">
+							</label>
+						</div>
+						<div class="form__group form__group--noborder">
+							<button class='form__cancel btn'>Cancel</button>
+							<button type='submit' class='form__confirm btn'>Confirm Payment</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./main.min.js"></script>
+</body>
+
+</html>
